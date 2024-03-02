@@ -1,5 +1,4 @@
 from queue import PriorityQueue
-
 def best_first_search(graph, start, goal):
     queue = PriorityQueue()
     queue.put((0, start))
@@ -13,7 +12,6 @@ def best_first_search(graph, start, goal):
             if neighbor not in visited:
                 queue.put((len(visited), neighbor))  # Adjusted to prioritize based on number of visited nodes
     return False
-
 if __name__ == "__main__":
     graph = {'A': ['B', 'C'], 'B': ['D', 'E'], 'C': ['F'], 'D': [], 'E': [], 'F': []}
     start, goal = 'A', 'F'
