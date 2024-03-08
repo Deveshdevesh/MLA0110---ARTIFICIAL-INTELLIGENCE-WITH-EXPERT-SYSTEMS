@@ -6,9 +6,9 @@ def solve_queens(board, col):
     if col >= 8: return True
     for i in range(8):
         if is_safe(board, i, col):
-            board[i][col] = Q
+            board[i][col] = 1
             if solve_queens(board, col + 1): return True
-            board[i][col] = _
+            board[i][col] = 0
     return False
 def place_queens():
     board = [[0] * 8 for _ in range(8)]
