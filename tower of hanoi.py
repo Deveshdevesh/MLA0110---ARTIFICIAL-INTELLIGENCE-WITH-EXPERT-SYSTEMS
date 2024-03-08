@@ -8,4 +8,4 @@ def a(n, source, target, auxiliary):
 
 # Example usage:
 n = 3  # Number of disks
-a(n, 'A', 'C', 'B')  # 'A' is the source, 'C' is the target, 'B' is the auxiliary
+a(n, 'A', 'C', 'B') 
